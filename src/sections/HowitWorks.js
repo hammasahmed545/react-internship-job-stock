@@ -36,22 +36,4 @@ function HowitWorks() {
 
 export default HowitWorks;
 
-// {Top.map((data) => {
-//   const { toptitle, h01, h02 } = data;
-//   return <WorkCard
-//   toptitle={toptitle}
-//   h01={h01}
-// h02={h02} />
-// ;
-// })}
 
-// {Account_Data.map((data) => {
-//   const { pic, heading, description } = data;
-//   return (
-//     <WorkCard
-//       pic={pic}
-//       heading={heading}
-//       description={description}
-//     />
-//   );
-// })}

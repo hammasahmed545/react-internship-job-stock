@@ -17,15 +17,7 @@ const BlogPost = () => {
               {BlogPostData.map((data) => {
                 const { date, author, img, detail, header, comments } = data;
                 return (
-                  <Post
-                    key={date}
-                    date={date}
-                    author={author}
-                    img={img}
-                    detail={detail}
-                    header={header}
-                    comments={comments}
-                  />
+                  <Post key={date} date={date} author={author} img={img} detail={detail} header={header} comments={comments}/>
                 );
               })}
             </div>
