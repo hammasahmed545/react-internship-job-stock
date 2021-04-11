@@ -33,6 +33,25 @@ const EData = [
         name: "Taylah Axon",
         position:"PHP Developer"
     },
+    {
+        pic:C,
+        name: "Zane Joyner",
+        position:"IOS Developer"
+    },
+    {
+        pic:D,
+        name: "Finn Osman",
+        position:"UI/UX Designer"
+    },
+    {
+        pic:B,
+        name: "Taylah Axon",
+        position:"PHP Developer"
+    },{
+        pic:A,
+        name: "Anna Hoysted",
+        position:"Web Designer"
+    },
 ]
 
 export {EData}

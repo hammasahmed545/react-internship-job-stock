@@ -11,17 +11,26 @@ const EmployeeList = () => {
             < div className="container">
                 <SearchFilter/>
                 <div className="row">
-                    <ManageEmployeeCard pic ={EData[0].pic} name ={EData[0].name} position={EData[0].position}/>
-                    <ManageEmployeeCard pic ={EData[1].pic} name ={EData[1].name} position={EData[1].position}/>
-                    <ManageEmployeeCard pic ={EData[2].pic} name ={EData[2].name} position={EData[2].position}/>
 
-                    <ManageEmployeeCard pic ={EData[3].pic} name ={EData[3].name} position={EData[3].position}/>
-                    <ManageEmployeeCard pic ={EData[4].pic} name ={EData[4].name} position={EData[4].position}/>
-                    <ManageEmployeeCard pic ={EData[0].pic} name ={EData[0].name} position={EData[0].position}/>
+                    {EData.map((employeeData, key)=> {
+                        const {pic, name, position} = employeeData
+                        return(
+                            <ManageEmployeeCard key={key} name={name} pic={pic} position={position} />
+                        );
+                    })}
 
-                    <ManageEmployeeCard pic ={EData[1].pic} name ={EData[1].name} position={EData[1].position}/>
-                    <ManageEmployeeCard pic ={EData[2].pic} name ={EData[2].name} position={EData[2].position}/>
-                    <ManageEmployeeCard pic ={EData[3].pic} name ={EData[3].name} position={EData[3].position}/>
+                    {/*<ManageEmployeeCard pic ={EData[0].pic} name ={EData[0].name} position={EData[0].position}/>*/}
+                    {/*<ManageEmployeeCard pic ={EData[1].pic} name ={EData[1].name} position={EData[1].position}/>*/}
+                    {/*<ManageEmployeeCard pic ={EData[2].pic} name ={EData[2].name} position={EData[2].position}/>*/}
+
+                    {/*<ManageEmployeeCard pic ={EData[3].pic} name ={EData[3].name} position={EData[3].position}/>*/}
+                    {/*<ManageEmployeeCard pic ={EData[4].pic} name ={EData[4].name} position={EData[4].position}/>*/}
+                    {/*<ManageEmployeeCard pic ={EData[0].pic} name ={EData[0].name} position={EData[0].position}/>*/}
+
+                    {/*<ManageEmployeeCard pic ={EData[1].pic} name ={EData[1].name} position={EData[1].position}/>*/}
+                    {/*<ManageEmployeeCard pic ={EData[2].pic} name ={EData[2].name} position={EData[2].position}/>*/}
+                    {/*<ManageEmployeeCard pic ={EData[3].pic} name ={EData[3].name} position={EData[3].position}/>*/}
+
                 </div>
                 <div className="row">
                     <ul className="pagination">

@@ -82,8 +82,8 @@ const Footer = ()=>{
 
                         <div className="textwidget">
                             <form className="footer-form"><input type="text" className="form-control" placeholder="Your Name" />
-                                <input type="text" className="form-control" placeholder="Email" /><textarea
-                                        className="form-control" placeholder="Message"></textarea>
+                                <input type="text" className="form-control" placeholder="Email" />
+                                <textarea className="form-control" placeholder="Message"> </textarea>
                                 <button type="submit" className="btn btn-primary">Login</button>
                             </form>
                         </div>
